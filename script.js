@@ -3,4 +3,4 @@ function random_value(secret_value) {
   return "Random value is " + (10 * secret_value * rand_number);
 }
 
-document.getElementById("result").innerHTML = random_value(1520);
+document.getElementById("result").innerHTML = random_value(1589);
