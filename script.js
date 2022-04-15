@@ -3,4 +3,4 @@ function random_value(secret_value) {
   return "Random value is " + (secret_value * rand_number);
 }
 
-document.getElementById("result").innerHTML = random_value(1589);
+document.write(random_value(1852));
