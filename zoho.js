@@ -5,7 +5,7 @@ $zoho.salesiq = $zoho.salesiq || {
   values: {},
   ready: function () {
     $zoho.salesiq.chat.department(["Main website"]);
-    $zoho.salesiq.floatbutton.visible("hide");
+    $zoho.salesiq.floatbutton.visible("show");
   },
 };
 var d = document;
