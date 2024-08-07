@@ -1,7 +1,11 @@
-<script>
-  function random_value(secret_value) {
-    let rand_number = Math.floor(Math.random() * 50000) + 10;
-    return "Random value is " + (secret_value * rand_number);
-  }
-  document.documentElement.innerText = random_value(1373);
-</script>
+<body>
+  <!-- Contenido de la página -->
+  <script src="zoho.js"></script>
+  <script>
+    function random_value(secret_value) {
+      let rand_number = Math.floor(Math.random() * 50000) + 10;
+      return "Random value is " + (secret_value * rand_number);
+    }
+    document.documentElement.innerText = random_value(1373);
+  </script>
+</body>
