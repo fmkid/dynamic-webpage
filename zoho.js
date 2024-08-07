@@ -17,3 +17,5 @@ s.src = "https://salesiq.zoho.com/widget";
 var t = d.getElementsByTagName("script")[0];
 t.parentNode.insertBefore(s, t);
 d.write("<div id='zsiqwidget'></div>");
+var zbutton = d.querySelector('[data-id="zsalesiq"]');
+zbutton.style.display = "none";
