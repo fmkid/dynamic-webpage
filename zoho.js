@@ -5,7 +5,7 @@ $zoho.salesiq = $zoho.salesiq || {
   values: {},
   ready: function () {
     $zoho.salesiq.chat.department(["Main website"]);
-    $zoho.salesiq.chatbutton.visible("hide");
+    $zoho.salesiq.floatbutton.visible("hide");
   },
 };
 var d = document;
@@ -16,8 +16,3 @@ s.defer = true;
 s.src = "https://salesiq.zoho.com/widget";
 var t = d.getElementsByTagName("script")[0];
 t.parentNode.insertBefore(s, t);
-t.onload = function () {
-  var zbutton = d.querySelector('[data-id="zsalesiq"]');
-  console.log(zbutton);
-  zbutton.style.display = "none";
-}
