@@ -19,5 +19,6 @@ t.parentNode.insertBefore(s, t);
 d.onload = function () {
   d.write("<div id='zsiqwidget'></div>");
   var zbutton = d.querySelector('[data-id="zsalesiq"]');
+  console.log(zbutton);
   zbutton.style.display = "none";
 }
