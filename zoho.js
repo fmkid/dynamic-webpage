@@ -10,8 +10,8 @@ $zoho.salesiq = $zoho.salesiq || {
 $zoho.salesiq.ready = function () {
     $zoho.salesiq.chat.department(["Main website"]);
     $zoho.salesiq.tracking.on();
-    $zoho.salesiq.chatbutton.visible("true");
-    $zoho.salesiq.chatwindow.visible("hide");
+    $zoho.salesiq.chatbutton.visible("show");
+    $zoho.salesiq.chatwindow.visible("show");
 };
 var pageDocument = document; //NOSONAR
 secondScript = pageDocument.createElement("script"); //NOSONAR
