@@ -4,15 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página Web</title>
-  <script src="zoho.js" defer></script>
 </head>
 <body>
-  <!-- Contenido de la página -->
-  <script>
-    function random_value(secret_value) {
-      let rand_number = Math.floor(Math.random() * 50000) + 10;
-      return "Random value is " + (secret_value * rand_number);
-    }
-    document.documentElement.innerText = random_value(1373);
+  <div>
+    <h1>Texto de prueba</h1>
+  </div>
+  <script type="text/javascript">
+    var $zoho = $zoho || {};
+    $zoho.salesiq = $zoho.salesiq || {
+      widgetcode:
+        "siqe94b4a9ea498a6ee876fd2d699d108bc833daf7a018e8a5f32da6a30211afd92",
+      values: {},
+      ready: function () {
+        $zoho.salesiq.chat.department(["Main website"]);
+      },
+    };
+    $zoho.salesiq.ready = function () {
+        $zoho.salesiq.chat.department(["Main website"]);
+        $zoho.salesiq.tracking.on();
+        $zoho.salesiq.chatbutton.visible("show");
+        $zoho.salesiq.chatwindow.visible("show");
+    };
+    var d = document;
+    var s = d.createElement("script");
+    s.type = "text/javascript";
+    s.id = "zsiqscript";
+    s.defer = true;
+    s.src = "https://salesiq.zoho.com/widget";
+    var t = d.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(s, t);
+    d.write("<div id='zsiqwidget'></div>");
   </script>
 </body>
