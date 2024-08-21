@@ -1,7 +1,7 @@
 var $zoho = $zoho || {};
 $zoho.salesiq = $zoho.salesiq || {
   widgetcode:
-    "siqe94b4a9ea498a6ee876fd2d699d108bc833daf7a018e8a5f32da6a30211afd92",
+    "xyz",
   values: {},
   ready: function () {
     $zoho.salesiq.chat.department(["Main website"]);
